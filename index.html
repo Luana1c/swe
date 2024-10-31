@@ -5,40 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Inclusivo</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="executa.js"></script>
 </head>
 <body>
     <header>
-        <h1>Sonhe Alto!</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
+       
+        <img class="logoheader" src="img/swelogo.png" alt="Logo" class="logo">
+            <h1 class="titulo">Inspiradoras Pro futuro</h1>        
+            <nav>
+            <ul class="menu">
+                <li><a href="#Meninasexatas">Meninas nas Exatas</a></li>
+                <li><a href="#desigualdade">Infância e Desigualdade de Gênero no Brasil</a></li>
+                <li><a href="#meninatec">Menina na tecnologia: quais os benefícios e como incentivar?</a></li>
+                <li><a href="#anapaula">Ana Paula Ferreira Arrais - Citação</a></li>
+                <li><a href="#cards">4 recomendações para aumentar o interesse de meninas e adolescentes nas carreiras em STEM</a></li>
+                <li><a href="#video">Vídeo inspirador</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="videos.html">Videos</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
             </ul>
-        </nav>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </nav> 
+
     </header>
 
+    <div class="containerbanner">
+        <figure>
+           <img class="banner" src="img/banner.png" alt="banner">
+        </figure>
+     </div>
+
     <main>
-        <section class="intro">
-            <h2>Bem-vindo(a) ao nosso espaço</h2>
-            <p>Aqui acreditamos que meninas e meninos devem ser livres para sonhar com qualquer carreira e futuro que desejarem!</p>
-            <p>Nosso projeto busca desafiar as normas de gênero que, muitas vezes, limitam as escolhas das meninas desde cedo. Acreditamos que todas as crianças, independentemente do sexo, devem ter liberdade para sonhar e alcançar seus objetivos sem barreiras. Vamos juntos transformar a forma como educamos nossos filhos e filhas, para que possam conquistar o futuro que desejam.</p>
-            <a href="sobre.html" class="btn-saiba-mais cta">Saiba Mais</a>
+        <section id="Meninasexatas" class="intro">
+            <h2>Meninas nas exatas!</h2>
+            <p>Desde crianças temos o costume de ouvir os adultos classificando as coisas como “coisa de menino” ou 
+                “ coisa de menina”, até os nossos gostos são influenciados por essas divisões como por exemplo 
+                “ meninas gostam de princesas e bonecas, já os meninos gostam de carrinho e esportes”. 
+                Muitas vezes somos criadas, mesmo sem a intenção, para as áreas de humanas, comunicação e cuidado, 
+                enquanto os meninos são criados para as áreas de exatas e tecnologia, mas por que nós mulheres não 
+                podemos ser das áreas tecnológicas também? Será que não podemos ser grandes inspirações nas áreas que 
+                desejarmos?</p>
+            <p>Nosso projeto busca desafiar essass normas de gênero que, muitas vezes, limitam as escolhas das meninas desde cedo. Acreditamos que todas as crianças, independentemente do sexo, devem ter liberdade para sonhar e alcançar seus objetivos sem barreiras.</p>
+            <a href="sobre.html" target="_blank" class="btn-saiba-mais cta">Saiba Mais</a>
         </section>
+
+        <section id="desigualdade" class="intro2">
+            <h2>Infância e Desigualdade de Gênero no Brasil | Visão Mundial</h2>
+            <p> Mas é já na infância que as desigualdades se mostram evidentes. O trabalho infantil doméstico, 
+                assim como na fase adulta, é quase todo reservado às meninas, que representam mais de 94% das 
+                crianças envolvidas neste tipo de atividade no Brasil. Deste número, 73% são negras e 83% delas 
+                também realizam afazeres domésticos em outras casas além das suas. Meninas são também duas vezes 
+                mais envolvidas em casamento infantil. E, na faixa dos 10 aos 17 anos, embora representem menos da 
+                metade das crianças e adolescentes que não estão da escola, mais de 30% deste número já são mães e 
+                54% não estudam e nem trabalham.
+                </p>
+            <a href="https://visaomundial.org.br/noticias/artigo-infancia-e-desigualdade-de-genero-no-brasil" target="_blank" class="btn-saiba-mais cta">Matéria Completa</a>
+        </section>
+        
+        
+
+        <section id="meninatec" class="intro3">
+            <h2>Menina na tecnologia: quais os benefícios e como incentivar? – Um Jornal Regional</h2>
+            <p> Durante várias décadas, os homens formaram a maioria no mercado de trabalho, ocupando principalmente 
+                os cargos mais altos nas empresas.
+                Porém, a sociedade mudou e a mulher cada vez mais ocupa seu espaço, afinal tem tanta competência 
+                quanto os homens. Mas, para que desenvolvam esse potencial, é preciso que as meninas recebam incentivos para aprimorarem seus conhecimentos.
+                Portanto, introduzir a menina na tecnologia não é algo supérfluo, mas necessário a um bom 
+                desenvolvimento e maior preparo para o futuro. Esse campo do saber oferece diversos 
+                benefícios tanto para ela quanto para a sociedade.
+                
+                </p>
+            <a href="https://visaomundial.org.br/noticias/artigo-infancia-e-desigualdade-de-genero-no-brasil" target="_blank" class="btn-saiba-mais cta">Matéria Completa</a>
+        </section>
+
+
+        <section>
+            <div class="imagemmeio">
+                <img  src="img/mulheres.jpg" alt="mulher">
+            </div>
+        </section>
+
+
+        <section id="anapaula" class="citacao">
+            <p class="p1">“O maior desafio para as mulheres na tecnologia começa na infância. Meninas na infância ganham bonecas,
+                panelinhas e outros itens voltados para o contexto doméstico. Somos pouco estimuladas para jogos,
+                brinquedos mais tecnológicos ou que estimulem o raciocínio. O ideal é o equilíbrio, estimulando desde 
+                cedodiversas habilidades seja nos meninos ou nas meninas. Por um bom tempo, o mundo da tecnologia foi
+                totalmente dominado pelos homens e hoje percebemos que as mulheres estão buscando seu espaço através
+                de capacitação e muita intuitividade!”                
+            </p>
+            <p class="p2">— Ana Paula Ferreira Arrais</p>
+        </section>
+
+    <section id="cards" class="contentgeral">
+        <section class="content1">
+        <h2>4 recomendações para aumentar o interesse de meninas e adolescentes nas carreiras em STEM</h2>
+        </section> 
 
         <section class="content">
+            
             <div class="card">
-                <h3>Sem Limites</h3>
-                <p>Oferecemos um espaço onde as crianças são encorajadas a explorar sem limites impostos por estereótipos.</p>
+                <h3>Gere interesse</h3>
+                <p>Quando meninas e adolescentes têm informações abrangentes e relevantes  sobre os benefícios e o impacto da tecnologia na vida das pessoas, seu interesse nas carreiras STEM duplica.
+                </p>
             </div>
             <div class="card">
-                <h3>Explore</h3>
-                <p>Fazemos questão de ampliar o horizonte de possibilidades, permitindo que sua filha escolha com liberdade.</p>
+                <h3>Experiências</h3>
+                <p>As meninas que são envolvidas em workshops ou laboratórios de ciência ou tecnologia mostram um maior interesse em desenvolver suas carreiras nessa área.</p>
+            </div>
+            <div class="card">
+                <h3>Apoie-as</h3>
+                <p>Aumente o número de mentores e exemplos de profissionais das áreas de  STEM, para ajudar a desenvolver a confiança nas meninas de que podem ter sim sucesso na ciência.</p>
+            </div>
+            <div class="card">
+                <h3>Visibilidade </h3>
+                <p>Meninas que conhecem mulheres que fazem carreira em STEM demonstram maior interesse neste campo do que meninas que não têm profissionais como referência.</p>
             </div>
 
         </section>
+    </section>
 
-        <section class="video-list">
+
+        <section id="video" class="video-list">
             <h2>Inspire-se com essas histórias!</h2>
             <p>Assista a vídeos sobre empoderamento feminino, igualdade de oportunidades e histórias inspiradoras de mulheres que conquistaram carreiras incríveis.</p>
             <!-- Exemplo de vídeos do YouTube -->
@@ -46,6 +139,37 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
+
+
+        <section class="intro3">
+            <h2>Fazendo nossa parte</h2>
+            <p>Incentivar e trazer mais meninas para áreas de exatas, principalmente de tecnologia, é um desafio importante e gratificante que 
+                precisa ser inserido em nossa sociedade. Para isso devemos desde a infância introduzir nelas uma busca,
+                 curiosidade e interesse na área com educação e ensino que desenvolvam isso.</p>
+                <p>Desde criança, meninas devem receber jogos que desenvolvam raciocínio lógico, intelectual e 
+                    brinquedos que  ajudem no desenvolvimento de habilidades e da imaginação. Construindo 
+                    autonomia, explorando e aprendendo cada vez mais. Essas são partes muito importantes na vida 
+                    das crianças, e podem trazer boas influências, despertando o talento e interesse para algumas 
+                    profissões.</p>
+            </section>
+
+
+        <section class="intro2">
+            <h2>Robótica e Interdisciplinaridade: Aprendizagem Criativa Atraindo Meninas para a Tecnologia</h2>
+            <p>O projeto de ensino de robótica e aprendizagem criativa em uma metodologia interdisciplinar. As 
+                estudantes aplicam o conhecimento adquirido nas aulas do ensino médio no laboratório de robótica 
+                utilizando a metodologia STEAM (Science, Technology, Engineering, the Arts and Mathematics), como 
+                pontos de acesso para orientar a investigação, o diálogo e o pensamento crítico. O principal objetivo 
+                do projeto é mostrar que as meninas podem atuar em diferentes áreas do conhecimento, incluindo as 
+                áreas STEM (Science, Technology, Engineering and Mathematics).</p>
+                <p>O projeto está em fase de andamento, mas já pode ser percebida uma maior motivação e interesse dos 
+                    alunos em seguir áreas de exatas, tecnologia e engenharia. As alunas estão obtendo desempenho
+                     satisfatório, algumas vezes melhor do que o dos alunos.</p>
+            <a href="ttps://sol.sbc.org.br/index.php/wit/article/view/11282" target="_blank" class="btn-saiba-mais cta">Artigo Completo</a>
+        </section>
+
+
+    
 
     <footer>
         <p>&copy; 2024 Sonhe Alto - Todos os direitos reservados.</p>

@@ -1,4 +1,7 @@
 /* Estilos Globais */
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -14,22 +17,54 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: #FFC857;
+    background-color: #5286a8;
     padding: 20px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoheader {
+    width: 10%;
 }
 
 header h1 {
-    color: #355070;
+    color: #24044d;
     font-size: 2.5rem;
     margin-bottom: 10px;
+    margin-top: 2px;
+    padding-top: 20px;
 }
 
 nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 500px;
+    background-color: #fff9f9;
+    border: 1px solid #000000;
+    border-radius: 0px;
     list-style: none;
-    display: flex;
-    justify-content: center;
+    padding: 10px;
+    text-align: left;
 }
+
+
+.menu-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* Exibe o menu quando ativo */
+nav ul.active {
+    display: flex; /* Mostra o menu quando clicado */
+}
+
 
 nav ul li {
     margin: 0 15px;
@@ -37,30 +72,58 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #355070;
+    color: #000000;
     font-weight: bold;
+    font-family: "Merriweather", serif;
 }
 
 nav ul li a:hover {
-    color: #FF6B6B;
+    color: #5e2c8d;
+}
+
+
+/*banner*/
+.banner {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    text-align: center;
 }
 
 /* Seção de Introdução */
 .intro {
-    background-color: #B18FCF;
+    background-color: #9a7bb6;
+    margin-left: 40px;
+    margin-right: 40px;
     padding: 50px 20px;
     text-align: center;
+    border-radius: 10px;
 }
 
 .intro h2 {
     font-size: 2rem;
-    color: #FFFFFF;
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px; 
 }
 
 .intro p {
-    font-size: 1.2rem;
-    color: #F4F4F9;
+    font-size: 1rem;
+    color: #000000;
     margin: 20px 0;
+    padding-left: 195px;
+    padding-right: 195px;
+    padding-bottom: 20px;
+    text-align: justify;
+    font-family: "Merriweather", serif;
+}
+
+.btn-saiba-mais {
+    margin-top: 20px;
+    text-decoration: none;
 }
 
 .cta {
@@ -72,11 +135,160 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-.cta:hover {
-    background-color: #FFA77B;
+.intro .cta:hover {
+    background-color: #ad6e4e;
+}
+
+/*intro 2*/
+
+.intro2 {
+    background-color: #4b688b;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.intro2 h2 {
+    font-size: 2rem;
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px; 
+}
+
+.intro2 p {
+    font-size: 1rem;
+    color: #000000;
+    margin: 20px 0;
+    padding-left: 195px;
+    padding-right: 195px;
+    padding-bottom: 20px;
+    text-align: justify;
+    font-family: "Merriweather", serif;
+}
+
+.intro2 .btn-saiba-mais {
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.intro2 .cta {
+    background-color: #35a186;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.intro2 .cta:hover {
+    background-color: #286858;
+}
+
+/*imagem meio*/
+.imagemmeio {
+    height: 95%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/*intro 3*/
+
+.intro3 {
+    background-color: #e66666;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.intro3 h2 {
+    font-size: 2rem;
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px; 
+}
+
+.intro3 p {
+    font-size: 1rem;
+    color: #000000;
+    margin: 20px 0;
+    padding-left: 195px;
+    padding-right: 195px;
+    padding-bottom: 20px;
+    text-align: justify;
+    font-family: "Merriweather", serif;
+}
+
+.intro3 .btn-saiba-mais {
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.intro3 .cta {
+    background-color: #9a7bb6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.intro3 .cta:hover {
+    background-color: #6d5581;
+}
+
+/*citacao*/
+.citacao {
+    background-color: #cc79ac;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top:40px;
+    margin-bottom:40px;
+    border-radius: 60px; 
+}
+
+.citacao .p1 {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #000000;
+    margin: 20px 0;
+    padding-left: 20px;
+    font-family: "Merriweather", serif;
+}
+.citacao .p2 {
+    font-size: 1.1rem;
+    color: #572543;
+    padding-left: 20px;
+    font-family: "Merriweather", serif;
 }
 
 /* Conteúdo */
+.contentgeral {
+    background-color: #b4bdca;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.content1 h2{
+    font-size: 2rem;
+    color: #0f1233;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px; 
+    text-align: center;
+    padding-top: 40px;
+
+}
+
 .content {
     display: flex;
     justify-content: space-around;
@@ -85,6 +297,7 @@ nav ul li a:hover {
 
 .card {
     background-color: #5D9B8E;
+    padding-top: 0%;
     padding: 20px;
     border-radius: 10px;
     width: 30%;
@@ -189,25 +402,10 @@ footer {
 
 /* Outros estilos reutilizáveis */
 header, footer {
-    background-color: #FFC857;
+    background-color: #5286a8;
     color: #355070;
     padding: 20px;
     text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #355070;
 }
 
 footer {
@@ -259,24 +457,7 @@ footer {
     color: #F4F4F9;
 }
 
-/* Responsividade - ajusta a largura dos cards em telas menores */
-@media (max-width: 1200px) {
-    .card {
-        width: 30%; /* Para três cards por linha */
-    }
-}
 
-@media (max-width: 768px) {
-    .card {
-        width: 45%; /* Para dois cards por linha */
-    }
-}
-
-@media (max-width: 480px) {
-    .card {
-        width: 100%; /* Para um card por linha em telas muito pequenas */
-    }
-}
 /* Estilos para a seção de vídeos */
 .video-list {
     margin-top: 40px;
@@ -319,24 +500,6 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    .video-list {
-        padding: 20px;
-    }
-
-    .video iframe {
-        height: 315px;
-    }
-
-    .video-list h2 {
-        font-size: 1.5rem;
-    }
-
-    .video-list p {
-        font-size: 0.9rem;
-    }
-}
 /* Estilo básico para o corpo */
 body {
     font-family: Arial, sans-serif;
@@ -344,20 +507,6 @@ body {
     padding: 0;
     background-color: #F4F4F9;
     color: #355070;
-}
-
-/* Estilo do cabeçalho */
-header {
-    background-color: #FFC857;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    color: #355070;
-    font-size: 2rem;
-    font-weight: bold;
 }
 
 /* Estilos principais da seção de vídeos */
@@ -445,5 +594,61 @@ footer p {
 
     .videos-section p {
         font-size: 0.9rem;
+    }
+}
+
+
+/*pagina de mulheres importantes para a ciencias*/
+
+.mulheres body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.mulheres main {
+    padding: 20px;
+}
+
+.card-containermulheres {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 20px; /* Espaçamento entre os cards */
+}
+
+.cardmulheres {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-img {
+    width: 25%;
+}
+
+.card-content {
+    padding: 20px;
+    flex: 1; /* Permite que o conteúdo do card ocupe o espaço restante */
+}
+
+h1, h2 {
+    font-size: 2rem;
+    color: #000000;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px; 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column; /* Torna o card vertical em telas pequenas */
+    }
+
+    .card-img {
+        width: 100%; /* A imagem ocupa 100% da largura */
     }
 }
